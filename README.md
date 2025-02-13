@@ -40,22 +40,17 @@ To ensure privacy compliance, systems are often required to remove the personal 
 📏 **Evaluation Metrics**
 Our Machine Unlearning Benchmark is evaluated based on four key aspects: model utility, forgetting performance, final score, and practical usability.
 
-⚡ 1. Model Utility
+⚡ **1. Model Utility**
 Accuracy: Measures the probability that the model’s predictions match the true labels in the test dataset. This serves as the primary metric for evaluating model performance.
-🔄 2. Forgetting Score
-Membership Inference Attack (MIA):
-Assesses the effectiveness of unlearning by determining whether specific data was used in training.
-A binary classifier is trained to distinguish between (1) forgotten data and (2) unseen data.
-An ideal MIA accuracy of 0.5 indicates perfect unlearning, meaning the model can no longer differentiate between seen and unseen data.
-📊 3. Final Score (NoMUS – Normalized Machine Unlearning Score)
-Holistic Unlearning Metric:
-NoMUS combines model utility and forgetting performance into a single score.
-It is calculated as a weighted sum, with λ (lambda) controlling the trade-off between accuracy and forgetting.
-Score Range: 0 (worst) → 1 (best), where higher values indicate better unlearning while preserving utility.
-⏳ 4. Practical Usability
-Time Efficiency:
-Measures the execution time of the PIU-FR method compared to the time required for full retraining from scratch.
-A lower runtime while maintaining high unlearning performance indicates a more practical and efficient approach.
+
+🔄 **2. Forgetting Score**
+Membership Inference Attack (MIA): Assesses the effectiveness of unlearning by determining whether specific data was used in training. With a binary classifier is trained to distinguish between (1) forgotten data and (2) unseen data. Specially, An ideal MIA accuracy of 0.5 indicates perfect unlearning, meaning the model can no longer differentiate between seen and unseen data.
+
+📊 **3. Final Score (NoMUS – Normalized Machine Unlearning Score)**
+Holistic Unlearning Metric: NoMUS combines model utility and forgetting performance into a single score. It is calculated as a weighted sum, with λ (lambda) controlling the trade-off between accuracy and forgetting. Specifically, score range is 0 (worst) → 1 (best), where higher values indicate better unlearning while preserving utility.
+
+⏳ **4. Practical Usability**
+Time Efficiency: Measures the execution time of the PIU-FR method compared to the time required for full retraining from scratch. With a lower runtime while maintaining high unlearning performance indicates a more practical and efficient approach.
 
 
 ## Contributors
