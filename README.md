@@ -2,7 +2,7 @@
 
 * For privacy-conscious applications, this repository provides extensive benchmark datasets and PyTorch-based Machine Unlearning implementations, which enable AI systems to exclude particular data points while preserving their original functionality.
 
-## 🔍 **Abstract**
+## 📄 **Abstract**
 
 To ensure privacy compliance, systems are often required to remove the personal identities of specific individuals they were trained to recognize, which has led to the emergence of machine unlearning methods. In this paper, we aim to achieve task-agnostic instance unlearning to forget specific individuals from facial images while maintaining high recognition accuracy for the model. Our approach is evaluated on the basis of the model's accuracy after the unlearning process, the forgetting score, and the final score. Specifically, we employ the ResNet-18 model to support the facial recognition task, with its weights adjusted using our proposed method, Personal Identity Unlearning for Facial Recognition (PIU-FR). Our method, named PIU-FR, combines two key techniques: a new machine unlearning approach that integrates the widely used NegGrad and SCRUB methods, and an innovative data partitioning strategy that generates an appropriate unseen dataset for each facial dataset to support the unlearning process. The results demonstrated that the ResNet-18 model retains high task accuracy after undergoing the unlearning process and meets the set objectives. Furthermore, PIU-FR outperforms previous state-of-the-art approaches and even surpasses retraining from scratch. This highlights that our approach allows machine learning models to effectively remove specific data samples used during training without the need for complete retraining.
 
@@ -56,22 +56,60 @@ Holistic Unlearning Metric: NoMUS combines model utility and forgetting performa
 
 Time Efficiency: Measures the execution time of the PIU-FR method compared to the time required for full retraining from scratch. With a lower runtime while maintaining high unlearning performance indicates a more practical and efficient approach.
 
-## Result
+## 🔍 **Result**
 
-1. **Table 1**. Performance of machine unlearning methods on the MUFAC with λ = 1/2
+**📊 Table 1**. Performance of machine unlearning methods on the MUFAC with λ = 1/2  
 <img src="./images/MUFAC_result.png" width="800px"/>
 
-2. **Table 2**. Performance of machine unlearning methods on the MUCAC for binary young/old classification with λ = 1/2
+**📊 Table 2**. Performance of machine unlearning methods on the MUCAC for binary young/old classification with λ = 1/2  
 <img src="./images/MUCAC_sex_result.png" width="800px"/>
 
-3. **Table 3**. Performance of machine unlearning methods on the MUCAC for binarysmilling/unsmilling classification with λ = 1/2
+**📊 Table 3**. Performance of machine unlearning methods on the MUCAC for binary smiling/unsmiling classification with λ = 1/2  
 <img src="./images/MUCAC_smile_result.png" width="800px"/>
 
-4. **Table 4**.Performance of machine unlearning methods on the MUCAC for binary male/female classification with λ = 1/2
+**📊 Table 4**. Performance of machine unlearning methods on the MUCAC for binary male/female classification with λ = 1/2  
 <img src="./images/MUCAC_age_result.png" width="800px"/>
 
-5. **Table 5**. Performance of machine unlearning methods on the JAFEE with λ = 1/2
+**📊 Table 5**. Performance of machine unlearning methods on the JAFFE with λ = 1/2  
 <img src="./images/JAFFE_result.png" width="800px"/>
+
+
+## 💡 **Demonstrating the Method’s Effectiveness in Unlearning**
+The model recognizes data within the unseen and forgetting datasets through the loss values for each class before and after the unlearning process in the MUFAC dataset. Specifically, as shown in figure 2, we observe that in each class, the model tends to recognize data within the forgetting dataset better (lower loss) than data in the unseen dataset. The reason is that models tend to perform better with the data they have been trained on, which results in a lower error rate.
+
+<table align="center">
+  <tr>
+    <td align="center"> 
+      <img src="images/before_unlearn.png" alt="Teaser" style="width: 700px;"/> 
+      <br>
+      <em style="font-size: 18px;">  <strong style="font-size: 18px;">Figure 2:</strong> The loss values of the model on the unseen and forgetting datasets after undergoing the unlearning process in the MUFAC dataset.</em>
+    </td>
+  </tr>
+</table>
+
+Thus, to demonstrate that the model has truly forgotten the target data, the PIU-FR method has made the model treat the forgetting dataset as if it were the unseen dataset (data the model has never been exposed to or trained on), as shown in figure 3. From figure 3, we see that the loss values across all classes for the unseen and forgetting datasets are now indistinguishable from one another. This confirms that when randomly selecting an image from either the forgetting or unseen dataset, the model cannot distinguish which dataset it belongs to.
+
+<table align="center">
+  <tr>
+    <td align="center"> 
+      <img src="images/after_unlearn.png" alt="Teaser" style="width: 700px;"/> 
+      <br>
+      <em style="font-size: 18px;">  <strong style="font-size: 18px;">Figure 3:</strong> The loss values of the model on the unseen and forgetting datasets after undergoing the unlearning process in the MUFAC dataset.</em>
+    </td>
+  </tr>
+</table>
+
+Finally, we retrained the model from scratch on the training dataset with the forgetting data removed (retained dataset) and observed that the model made predictions and treated the unseen and forgetting datasets in the same way as the original model after undergoing the PIU-FR method, as shown in figure 4. This confirms that the PIU-FR approach is valid.
+
+<table align="center">
+  <tr>
+    <td align="center"> 
+      <img src="images/retrained.png" alt="Teaser" style="width: 700px;"/> 
+      <br>
+      <em style="font-size: 18px;">  <strong style="font-size: 18px;">Figure 4:</strong> The loss values of the model on the unseen and forgetting datasets with the retraining method on the retained dataset in the MUFAC dataset.</em>
+    </td>
+  </tr>
+</table>
 
 ## Contributors
 
