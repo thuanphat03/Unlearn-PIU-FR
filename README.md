@@ -10,7 +10,7 @@ To ensure privacy compliance, systems are often required to remove the personal 
 <table align="center">
   <tr>
     <td align="center"> 
-      <img src="images/proposed_method.png" alt="Teaser" style="width: 700px;"/> 
+      <img src="images/proposed_method.jpg" alt="Teaser" style="width: 700px;"/> 
       <br>
       <em style="font-size: 18px;">  <strong style="font-size: 18px;">Figure 1:</strong> An outline of our Personal Identity Unlearning for Facial Recognition (PIU-FR) proposal.</em>
     </td>
