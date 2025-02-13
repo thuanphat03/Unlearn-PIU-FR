@@ -10,7 +10,7 @@ To ensure privacy compliance, systems are often required to remove the personal 
 <table align="center">
   <tr>
     <td align="center"> 
-      <img src="Images/proposed_method.png" alt="Teaser" style="width: 700px;"/> 
+      <img src="images/proposed_method.png" alt="Teaser" style="width: 700px;"/> 
       <br>
       <em style="font-size: 18px;">  <strong style="font-size: 18px;">Figure 1:</strong> An outline of our Personal Identity Unlearning for Facial Recognition (PIU-FR) proposal.</em>
     </td>
@@ -23,19 +23,19 @@ To ensure privacy compliance, systems are often required to remove the personal 
 📌 MUFAC is a multi-class age classification dataset derived from AI HUB, containing 13,000+ Asian facial images. Each image is annotated with age group labels and personal identities, making it an ideal resource for research in machine unlearning and privacy-preserving AI.
 
 🖼️ Dataset Preview:
-<img src="./resources/MUFAC.png" width="800px"/>
+<img src="./images/MUFAC.png" width="800px"/>
  
 🔗 **MUCAC (Machine Unlearning for Celebrity Attribute Classifier)**
 📌 MUCAC is a multi-label facial attribute classification dataset based on CelebA, expanded to 30,000 images. It includes personal identity annotations, making it a valuable resource for machine unlearning research and privacy-preserving AI.
 
 🖼️ Dataset Preview:
-<img src="./resources/MUCAC.png" width="800px"/>
+<img src="./images/MUCAC.png" width="800px"/>
 
 🔗 **JAFFE (Japanese Female Facial Expression TIFF Images)**
 📌 JAFFE is a facial expression dataset created by Lyons, Kamachi, and Gyoba at Kyushu University, consisting of 213 grayscale images (256×256 pixels) of 10 Japanese female expressers. The images capture seven facial expressions (six basic emotions + neutral), with semantic ratings averaged from 60 Japanese viewers. The dataset, available in TIFF format, is intended for non-commercial scientific research under specific terms of use.
 
 🖼️ Dataset Preview:
-<img src="./resources/JAFFE.png" width="800px"/>
+<img src="./images/JAFFE.png" width="800px"/>
 
 ## 📏 **Evaluation Metrics**
 Our Machine Unlearning Benchmark is evaluated based on four key aspects: model utility, forgetting performance, final score, and practical usability.
@@ -56,6 +56,22 @@ Holistic Unlearning Metric: NoMUS combines model utility and forgetting performa
 
 Time Efficiency: Measures the execution time of the PIU-FR method compared to the time required for full retraining from scratch. With a lower runtime while maintaining high unlearning performance indicates a more practical and efficient approach.
 
+## Result
+
+1. **Table 1**. Performance of machine unlearning methods on the MUFAC with λ = 1/2
+<img src="./images/MUFAC_result.png" width="800px"/>
+
+2. **Table 2**. Performance of machine unlearning methods on the MUCAC for binary young/old classification with λ = 1/2
+<img src="./images/MUCAC_sex_result.png" width="800px"/>
+
+3. **Table 3**. Performance of machine unlearning methods on the MUCAC for binarysmilling/unsmilling classification with λ = 1/2
+<img src="./images/MUCAC_smile_result.png" width="800px"/>
+
+4. **Table 4**.Performance of machine unlearning methods on the MUCAC for binary male/female classification with λ = 1/2
+<img src="./images/MUCAC_age_result.png" width="800px"/>
+
+5. **Table 5**. Performance of machine unlearning methods on the JAFEE with λ = 1/2
+<img src="./images/JAFFE_result.png" width="800px"/>
 
 ## Contributors
 
