@@ -48,9 +48,9 @@ Accuracy: Measures the probability that the model’s predictions match the true
 
 Membership Inference Attack (MIA): Assesses the effectiveness of unlearning by determining whether specific data was used in training. With a binary classifier is trained to distinguish between (1) forgotten data and (2) unseen data. Specially, An ideal MIA accuracy of 0.5 indicates perfect unlearning, meaning the model can no longer differentiate between seen and unseen data.
 
-📊 **3. Final Score (NoMUS – Normalized Machine Unlearning Score)**
+📊 **3. Final Score**
 
-Holistic Unlearning Metric: NoMUS combines model utility and forgetting performance into a single score. It is calculated as a weighted sum, with λ (lambda) controlling the trade-off between accuracy and forgetting. Specifically, score range is 0 (worst) → 1 (best), where higher values indicate better unlearning while preserving utility.
+Holistic Unlearning Metric: Final Score combines model utility and forgetting performance into a single score. It is calculated as a weighted sum, with λ (lambda) controlling the trade-off between accuracy and forgetting. Specifically, score range is 0 (worst) → 1 (best), where higher values indicate better unlearning while preserving utility.
 
 ⏳ **4. Practical Usability**
 
