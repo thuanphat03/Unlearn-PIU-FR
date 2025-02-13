@@ -61,13 +61,13 @@ Time Efficiency: Measures the execution time of the PIU-FR method compared to th
 **📊 Table 1**. Performance of machine unlearning methods on the MUFAC with λ = 1/2  
 <img src="./images/MUFAC_result.png" width="800px"/>
 
-**📊 Table 2**. Performance of machine unlearning methods on the MUCAC for binary young/old classification with λ = 1/2  
+**📊 Table 2**. Performance of machine unlearning methods on the MUCAC for binary male/female classification with λ = 1/2  
 <img src="./images/MUCAC_sex_result.png" width="800px"/>
 
 **📊 Table 3**. Performance of machine unlearning methods on the MUCAC for binary smiling/unsmiling classification with λ = 1/2  
 <img src="./images/MUCAC_smile_result.png" width="800px"/>
 
-**📊 Table 4**. Performance of machine unlearning methods on the MUCAC for binary male/female classification with λ = 1/2  
+**📊 Table 4**. Performance of machine unlearning methods on the MUCAC for binary young/old classification with λ = 1/2  
 <img src="./images/MUCAC_age_result.png" width="800px"/>
 
 **📊 Table 5**. Performance of machine unlearning methods on the JAFFE with λ = 1/2  
