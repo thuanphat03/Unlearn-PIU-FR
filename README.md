@@ -1,5 +1,3 @@
-<div align='center'>
- 
 🛡️ PIU-FR: Personal Identity Unlearning for Facial Recognition
 
 * For privacy-conscious applications, this repository provides extensive benchmark datasets and PyTorch-based Machine Unlearning implementations, which enable AI systems to exclude particular data points while preserving their original functionality.
