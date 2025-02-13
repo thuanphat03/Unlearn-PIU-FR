@@ -29,7 +29,7 @@ To ensure privacy compliance, systems are often required to remove the personal 
 📌 MUCAC is a multi-label facial attribute classification dataset based on CelebA, expanded to 30,000 images. It includes personal identity annotations, making it a valuable resource for machine unlearning research and privacy-preserving AI.
 
 🖼️ Dataset Preview:
-<img src="./images/MUCAC_age.png" width="800px"/>
+<img src="./images/MUCAC.png" width="800px"/>
 
 🔗 **JAFFE (Japanese Female Facial Expression TIFF Images)**
 📌 JAFFE is a facial expression dataset created by Lyons, Kamachi, and Gyoba at Kyushu University, consisting of 213 grayscale images (256×256 pixels) of 10 Japanese female expressers. The images capture seven facial expressions (six basic emotions + neutral), with semantic ratings averaged from 60 Japanese viewers. The dataset, available in TIFF format, is intended for non-commercial scientific research under specific terms of use.
