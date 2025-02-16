@@ -1,6 +1,6 @@
 ## PIU-FR: Personal Identity Unlearning for Facial Recognition
 
-* For privacy-conscious applications, this repository provides extensive benchmark datasets and PyTorch-based Machine Unlearning implementations, which enable AI systems to exclude particular data points while preserving their original functionality.
+* For privacy-conscious applications, this repository provides extensive benchmark datasets, including access to dataset samples, experimental results, and proposed architectures. It has been accepted for publication in the Proceedings of the 17th Asian Conference on Intelligent Information and Database Systems (ACIIDS 2025), published by Springer in 2025, under the title "PIU-FR: Personal Identity Unlearning for Facial Recognition".
 
 ## 📄 **Abstract**
 
