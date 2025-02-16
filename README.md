@@ -111,8 +111,23 @@ Finally, we retrained the model from scratch on the training dataset with the fo
   </tr>
 </table>
 
-## Contributors
+## 📖 **Contributors**
 
 * [Thai Hoang Le](https://orcid.org/0000-0002-6801-1924)
 * [Phat Thuan Tran](https://orcid.org/0009−0004−3461−5713)
 * [Nhi Man Bui Nguyen](https://orcid.org/0009−0005−2960−2755)
+
+## Cite This Work
+```
+@inproceedings{aciids2025PIU-FR,
+  title={PIU-FR: Personal Identity Unlearning for Facial Recognition},
+  author={Thai Hoang Le, Phat Thuan Tran, Nhi Man Bui Nguyen},
+  booktitle={Proceedings of the 17th Asian Conference on Intelligent Information and Database Systems (ACIIDS 2025)},
+  publisher={Springer},
+  series={Communications in Computer and Information Science (CCIS)},
+  year={2025}
+}
+```
+has been ACCEPTED by the ACIIDS 2025 Program Committee for poster presentation at the conference and publication in the ACIIDS 2025 CCIS PROCEEDINGS
+
+
