@@ -128,6 +128,5 @@ Finally, we retrained the model from scratch on the training dataset with the fo
   year={2025}
 }
 ```
-has been ACCEPTED by the ACIIDS 2025 Program Committee for poster presentation at the conference and publication in the ACIIDS 2025 CCIS PROCEEDINGS
 
 
