@@ -115,7 +115,7 @@ Finally, we retrained the model from scratch on the training dataset with the fo
 
 * [Thai Hoang Le](https://orcid.org/0000-0002-6801-1924)
 * [Phat Thuan Tran](https://orcid.org/0009-0004-3461-5713)
-* [Nhi Man Bui Nguyen](https://orcid.org/0009−0005−2960−2755)
+* [Nhi Man Bui Nguyen](https://orcid.org/0009-0005-2960-2755)
 
 ## Cite This Work
 ```
